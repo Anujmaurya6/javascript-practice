@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="my.css">
+    <!-- ❌ yeh galat hai: script upar likha hai -->
+    <!-- ✅ script ko body ke end me likhna chahiye taaki HTML load ho jaye pehle -->
+</head>
+<body>
+    <ul>
+        <!-- ❌ default empty <li> hata do warna blank space dikhega -->
+    </ul>
+
+    <input type="text" placeholder="add new item">
+    <button id="add">add</button>
+    <button id="remove">remove</button> <!-- ✅ "Remove" ko lowercase "remove" kiya (ID case-sensitive hai) -->
+
+    <!-- ✅ script ko yahan load karo -->
+    <script src="my.js"></script>
+</body>
+</html>
